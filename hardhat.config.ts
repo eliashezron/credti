@@ -13,6 +13,7 @@ const accounts = [
  const celoScan: any = process.env.CELOSCAN_API_KEY;
  const baseScan: any = process.env.BASESCAN_API_KEY;
  const scrollScan: any = process.env.SCROLLSCAN_API_KEY;
+ const arbitrumScan: any = process.env.ARBITRUMSCAN_API_KEY;
 
 const config: HardhatUserConfig = {
   networks: {		
@@ -43,6 +44,7 @@ const config: HardhatUserConfig = {
 		  alfajores: celoScan,
 		   baseSepolia: baseScan,
 		   scrollSepolia: scrollScan,
+		   arbitrumOne: arbitrumScan,
 		},
 		customChains: [
 		  {

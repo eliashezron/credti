@@ -3,18 +3,18 @@
 
 import { buildModule } from "@nomicfoundation/hardhat-ignition/modules";
 
-const RECLAIMADDRESS = 0xe79A453bD088F4A58656b315a7C1f8Ea3473CCf1;
-const USDCADDRESS = 0x2F25deB3848C207fc8E0c34035B3Ba7fC157602B;
+const RECLAIMADDRESS = "0xe79A453bD088F4A58656b315a7C1f8Ea3473CCf1";
+const USDCADDRESS = "0x64cbD5763176359ef8C853E5A8071566C72d78E6";
 const INTERESTRATE: bigint = 450n;
 
-const CREDTIModule = buildModule("CREDTIModule", (m) => {
+const CREDTIModuleCelo = buildModule("CREDTIModule", (m) => {
   const reclaimAddress = m.getParameter("reclaimAddress", RECLAIMADDRESS);
   const usdcAddress = m.getParameter("usdcAddress", USDCADDRESS);
   const interestRate = m.getParameter("interestRate", INTERESTRATE);
 
-  const contract = m.contract("Lock", [reclaimAddress,usdcAddress,interestRate]);
+  const contract = m.contract("CREDTI", [reclaimAddress,usdcAddress,interestRate]);
 
   return { contract };
 });
 
-export default CREDTIModule;
+export default CREDTIModuleCelo;
