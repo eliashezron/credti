@@ -15,3 +15,12 @@ node_modules
 
 # Hardhat Ignition default folder for deployments against a local node
 ignition/deployments/chain-31337
+
+client/.gitignore
+client/node_modules
+client/.env
+
+react-app/.gitignore
+react-app/node_modules
+react-app/.env
+react-app/.next

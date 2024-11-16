@@ -37,6 +37,11 @@ const config: HardhatUserConfig = {
 			accounts: accounts,
 			chainId: 44787,
 		},
+		// TODO
+		// Morph
+		// Zircuit
+		// Linea
+		// Mantle
 	},
 	etherscan: {
 		apiKey: {
