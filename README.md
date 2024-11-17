@@ -122,28 +122,37 @@
 ```bash
 git clone https://github.com/your-repo/credti.git
 cd credti
+```
 
-2. Install Dependencies
-bash
+### 2. Install Dependencies
+```bash
 Copy code
 npm install
-3. Compile Smart Contracts
-bash
+```
+
+### 3. Compile Smart Contracts
+```bash
 Copy code
 npx hardhat compile
-4. Deploy Contracts
+```
+
+### 4. Deploy Contracts
 Configure the network settings in hardhat.config.js and deploy:
 
-bash
+```bash
 Copy code
 npx hardhat run scripts/deploy.js --network celo
-5. Run Frontend
-bash
+```
+
+### Run Frontend
+``` bash
 Copy code
 cd client
 npm install
 npm run dev
-Future Improvements
+```
+
+### Future Improvements
 Multi-Currency Support:
 Enable lending in additional stablecoins (e.g., DAI, USDT).
 Credit Scoring Integration:
@@ -153,7 +162,7 @@ Add features like variable interest rates and loan extensions.
 Contributing
 We welcome contributions! Please submit issues or pull requests on GitHub.
 
-License
+### License
 This project is licensed under the MIT License.
 
 yaml
